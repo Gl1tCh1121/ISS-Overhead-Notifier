@@ -22,6 +22,7 @@
 
 <pre>
 📦 iss-notifier/
+ ┣ 📜 images        # Demo image
  ┣ 📜 main.py        # Main script (ISS tracking + email notifier)
  ┣ 📜 README.md      # Project documentation
 </pre>
