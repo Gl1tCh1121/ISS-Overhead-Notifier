@@ -73,7 +73,7 @@ The ISS is above you.
 <h2> Demo</h2>
 
 <p>
-  Below is a quick demonstration of the Password Manager in action:
+  Below is a quick demonstration of the ISS Overhead Notifier:
 </p>
 
 <p align="center">
