@@ -30,8 +30,8 @@ def is_night():
     sunrise = int(data["results"]["sunrise"].split("T")[1].split(":")[0])
     sunset = int(data["results"]["sunset"].split("T")[1].split(":")[0])
 
-    if time_now.hour <= sunrise and time_now.hour >= sunset:
-       return True
+    if time_now.hour >= sunset or time_now.hour <= sunrise:
+        return True
 
 time_now = datetime.datetime.now()
 
@@ -42,6 +42,6 @@ while True:
             connection.starttls()
             connection.login(user=MY_EMAIL, password=MY_PASSWORD)
             connection.sendmail(from_addr=MY_EMAIL, 
-                to_addrs="Address@gmail.com", #address mail
+                to_addrs="Address@gmail.com", #Address Mail
                 msg=f"Subject: Look up in the sky\n\n The ISS is above you."
                 )
